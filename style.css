@@ -3,11 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;  
-    transition: 0.5s;
+    font-size: 14px;  
+    transition: 0.4s;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
+}
+h1{
+    font-size: 30px;
 }
 /* ul{
     display: flex;
@@ -39,7 +42,11 @@ header{
     width: 100%;
 }
 header img{
-    max-width: 80px;
+    max-width: 100px;
+    margin: -10px;
+}
+header img:hover{
+    transform: scale(1.1);
 }
 header .shopping{
     position: relative;
@@ -70,13 +77,18 @@ header .shopping span{
 .nav-header li a {
     color: black;
     font-weight: bold;
+    font-size: 25px;
+}
+.nav-header li a:hover{
+    color: orangered;
+    font-size: 26px;
 }
 .list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 20px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .card{
     position: fixed;
@@ -133,6 +145,7 @@ header .shopping span{
 }
 .list .item img{
     width: 80%;
+    border-radius: 3%;
 }
 .list .item .title{
     font-weight: 600;
@@ -146,6 +159,10 @@ header .shopping span{
     padding: 10px;
     width: 100%;
     cursor: pointer;
+}
+.list .item button:hover{
+    background: orangered;
+    border: orangered;
 }
 .listCard li{
     display: grid;
@@ -172,3 +189,14 @@ header .shopping span{
     margin: 0 10px;
 }
 
+.wrapper{
+    display: block;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px; 
+}
+.show-products{
+    background: #fff;
+}

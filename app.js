@@ -16,7 +16,7 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'Capuccino',
+        name: 'Iced Capuccino',
         img: 'imges/Product/LINE_ALBUM_ครั้ง 2 ที่ถ่ายเมนู ep 2_๒๓๐๔๒๗_46.jpg',
         price: 2.5
     },
@@ -28,16 +28,46 @@ let products = [
     },
     {
         id: 3,
-        name: 'Latte',
+        name: 'Iced Latte',
         img: 'imges/Product/LINE_ALBUM_ครั้ง 2 ที่ถ่ายเมนู ep 2_๒๓๐๔๒๗_70.jpg',
         price: 2.5
     },
     {
         id: 4,
-        name: 'Americano',
+        name: 'Iced Americano',
         img: 'imges/Product/LINE_ALBUM_ถ่ายครั้งแรก_๒๓๐๕๑๑_188.jpg',
         price: 2.5
-    }
+    },
+    {
+        id: 5,
+        name: 'Black Mandarin',
+        img: 'imges/Product/LINE_ALBUM_ถ่ายครั้งแรก 2_๒๓๐๔๒๗_283.jpg',
+        price: 3
+    },
+    {
+        id: 6,
+        name: 'Iced Chocolate',
+        img: 'imges/Product/LINE_ALBUM_ถ่ายครั้งแรก 2_๒๓๐๔๒๗_173.jpg',
+        price: 2.5
+    },
+    {
+        id: 7,
+        name: 'Hot Americano',
+        img: 'imges/Product/LINE_ALBUM_ถ่ายครั้งแรก_๒๓๐๕๑๑_203.jpg',
+        price: 2
+    },
+    {
+        id: 8,
+        name: 'Hot Cuppuccino',
+        img: 'imges/Product/LINE_ALBUM_ถ่ายครั้งแรก_๒๓๐๕๑๑_281.jpg',
+        price: 2
+    },
+    {
+        id: 9,
+        name: 'Hot Latte',
+        img: 'imges/Product/LINE_ALBUM_ครั้ง 2 ที่ถ่ายเมนู ep 2_๒๓๐๔๒๗_237.jpg',
+        price: 2
+    },
 ];
 
 let listCards = [];
