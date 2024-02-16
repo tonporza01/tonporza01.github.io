@@ -30,7 +30,19 @@ body{
     /* background-image: url("imges/cover_artists/โปสเตอร์อาหาร\ 002.jpg"); */
     /* background-size: cover; */
 }
-
+.btn{
+    padding: 10px 20px;
+    background: #1cff08;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 1px 2px 6px #6d6d6d;
+    text-shadow: 2px 2px 4px rgba(25, 0, 0, 1);
+    cursor: pointer;
+    margin: 0 5px;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
 header{
     display: flex;
     flex-wrap: wrap;
@@ -123,7 +135,38 @@ input[type="text"]:focus{
     position: absolute;
     top: 0;
 }
+/* Body */
+.Content-hero{
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-image: url("imges/red-brown-brick-wall-background.jpg");
+    background-size: cover;
+}
+.img-hero-box{
+    margin-bottom: 1.5rem!important;
+    margin: 0 auto;
+}
+.hero-title{
+    font-size: calc(1.45rem + 2.1vw);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+}
+.hero-para-box{
+    margin: 0 auto;
+    width: 50%;
+    flex: 0 0 auto;
+}
+.hero-para{
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fff;
+}
 
+/* Body */
+
+/* prodcuts list */
 .list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
