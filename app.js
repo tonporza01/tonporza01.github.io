@@ -90,7 +90,7 @@ initApp();
 function checkCart(){
     var cookieValue = document.cookie
     .split('; ')
-    .find(row => row.startsWith('listCards='));
+    .find(row => row.startsWith('listCard='));
     if(cookieValue){
         listCards = JSON.parse(cookieValue.split('=')[1]);
     }
@@ -105,7 +105,7 @@ function addToCard (key) {
     }
     // save to cookie
     let timeSave = "expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    document.cookie = "listCards=" + JSON.stringify(listCards) + "; " + timeSave +"; path=/;";
+    document.cookie = "listCard=" + JSON.stringify(listCard) + "; " + timeSave +"; path=/;";
     // reload list card
     reloadCard();
 }

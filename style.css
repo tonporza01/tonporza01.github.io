@@ -249,11 +249,8 @@ input[type="text"]:focus{
     text-align: center;
     margin-top: 20px; 
 }
-.show-products{
+.show-products-incart{
     background: #fff;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /* Page checkout */
