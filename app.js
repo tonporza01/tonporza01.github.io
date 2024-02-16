@@ -86,14 +86,29 @@ function initApp() {
 }
 initApp();
 
+//  get cookie data cart
+function checkCart (){
+    var cookieValue = document.cookie.split('; ')
+    .find(row => row.startsWith('listCards='));
+    if(cookieValue){
+        listCards = JSON.parse(cookieValue.split('=')[1]);
+    }
+}
+checkCart();
+
 function addToCard (key) {
     if(listCards[key] == null) {
         // copy product form list to list card
         listCards[key] = JSON.parse(JSON.stringify(products[key]));
         listCards[key].quantity = 1;
     }
+    // save to local storage cookie
+    let timeSave = "expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    document.cookie = "listCards=" + JSON.stringify(listCards) + "; " + timeSave +"; path=/";
+    // reload list card
     reloadCard();
 }
+reloadCard();
 function reloadCard (){
     listCard.innerHTML = '';
     let count = 0;
@@ -127,5 +142,8 @@ function changeQuantity(key, quantity){
         listCards[key].quantity = quantity;
         listCards[key].price = quantity * products[key].price;
     }
+    // save to local storage cookie new
+    let timeSave = "expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    document.cookie = "listCards="+JSON.stringify(listCards)+ "; " + timeSave +"; path=/";
     reloadCard();
 }
