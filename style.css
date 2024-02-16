@@ -102,18 +102,20 @@ header .shopping span{
 #input-wrapper{
     height: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 input{
-    background: #fdfdfd;
+    background: #f5f4f4;
     border: none;
     border-radius: calc(0.5*44px);
     color: #000;
     font-family: inherit;
     font-size: inherit;
-    height: 100%;
+    height: 48%;
     outline: 0;
     padding-inline-end: 72px;
-    padding-inline-start: 52px;
+    padding-inline-start: 58px;
     position: relative;
     width: 100%;
 }
@@ -121,10 +123,10 @@ input[type="text"]{
     appearance: auto;
     box-sizing: border-box;
     padding-block: 1px;
-    /* padding-inline: 2px; */
 }
 input[type="text"]:focus{
-    background: #f5f5f5fa;
+    background: #d6d2d2fa;
+    font-size: 16px;
 }
 .Search-Nav{
     overflow: hidden;
@@ -132,9 +134,11 @@ input[type="text"]:focus{
 }
 .search-icon{
     height: 100%;
-    left: 12px;
+    left: 18px;
     position: absolute;
-    top: 0;
+    top: 15;
+    width: 40px;
+    opacity: 0.7;
 }
 /* Body */
 .Content-hero{
@@ -181,7 +185,8 @@ input[type="text"]:focus{
     left: 100%;
     width: 500px;
     height: 100vh;
-    background: #794b26fa;
+    background-image: url("imges/red-brown-brick-wall-background.jpg");
+    background-size: cover;
     transition: 0.5s;
 }
 .card h1{
@@ -222,7 +227,7 @@ input[type="text"]:focus{
     font-size: large;
 }
 .card .checkout div:nth-child(2){
-    background-color: #000;
+    background-color: #ff0000;
     color: #fff;
 }
 .active .card{
