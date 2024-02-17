@@ -90,7 +90,7 @@ initApp();
 function checkCart(){
     var cookieValue = document.cookie
     .split('; ')
-    .find(row => row.startsWith('listCard='));
+    .find(row => row.startsWith('listCards='));
     if(cookieValue){
         listCards = JSON.parse(cookieValue.split('=')[1]);
     }
@@ -104,12 +104,12 @@ function addToCard (key) {
         listCards[key].quantity = 1;
     }
     // save to cookie
-    let timeSave = "expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    document.cookie = "listCard=" + JSON.stringify(listCard) + "; " + timeSave +"; path=/;";
+    let timeSave = "expires=Thu, 01 Jan 2025 00:00:00 GMT";
+    document.cookie = "listCards="+JSON.stringify(listCards)+"; "+timeSave+"; path=/;";
     // reload list card
     reloadCard();
 }
-
+reloadCard()
 function reloadCard (){
     listCard.innerHTML = '';
     let count = 0;
@@ -126,14 +126,14 @@ function reloadCard (){
             <div>${value.price.toLocaleString()}$</div>
             <div>
             <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
-            <div class="count">${value.quantity}</div>
+            <div class="count">$${value.quantity}</div>
             <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
 
             `;
             listCard.appendChild(newDiv);
         }
     })
-    total.innerText = totalPrice.toLocaleString();
+    total.innerText = totalPrice.toLocaleString()+"$";
     quantity.innerText = count;
 }
 function changeQuantity(key, quantity){
@@ -144,7 +144,7 @@ function changeQuantity(key, quantity){
         listCards[key].price = quantity * products[key].price;
     }
     // save to local storage cookie new
-    let timeSave = "expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    document.cookie = "listCards="+JSON.stringify(listCards)+ "; " + timeSave +"; path=/;";
+    let timeSave = "expires=Thu, 01 Jan 2025 00:00:00 GMT";
+    document.cookie = "listCards="+JSON.stringify(listCards)+"; "+timeSave+"; path=/;";
     reloadCard();
 }
