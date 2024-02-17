@@ -32,9 +32,7 @@ function reloadCard (){
             <div>${value.name}</div>
             <div>${value.price.toLocaleString()}$</div>
             <div>
-            <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
             <div class="count">${value.quantity}</div>
-            <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
 
             `;
             listCard.appendChild(newDiv);
