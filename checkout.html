@@ -32,23 +32,25 @@
         <div class="show-products-incart">
             <div class="checkoutLayout">
                 <div class="returnCart">
+                    <a href="product.html" style="color: rgb(251, 255, 0); text-decoration: none; cursor: pointer; font-size: 1.1rem;">Keep Shopping</a>
                     <h1 style="color: white;">Shopping Cart</h1>
                     <ul class="listCard"></ul>
                 </div>
                 <div class="right">
                     <h1>CHECKOUT</h1>
+                    <br>
                     <div class="form">
                         <div class="group">
                             <label for="">Full name</label>
-                            <input type="text" placeholder="" name="" id="">
+                            <input type="text" placeholder="Full name" name="" id="">
                         </div>
                         <div class="group">
                             <label for="">Phone Number</label>
-                            <input type="text" placeholder="" name="" id="">
+                            <input type="text" placeholder="Phone Number" name="" id="">
                         </div>
                         <div class="group">
                             <label for="">Address</label>
-                            <input type="text" placeholder="" name="" id="">
+                            <input type="text" placeholder="Address" name="" id="">
                         </div>
                         <div class="group">
                             <label for="">County</label>
@@ -72,17 +74,36 @@
                     
                     <div class="return">
                         <div class="row">
-                            <div>Total quantity</div>
+                            <div><p>Total quantity</p></div>
                             <div class="Quantity">3</div>
                         </div>
                         <div class="row">
-                            <div>Total Price</div>
+                            <div><p>Total Price</p></div>
                             <div class="total">10</div>
                         </div>
                     </div>
-    
+
+                    <!-- This element is for payment method input radio -->
+                    <!-- <div class="payment">
+                        <div class="paymentlist">
+                            <label for="payment-input" class="payment-input">
+                                <input type="radio" name="payment" id="payment-input">
+                                <img src="imges/credit-card-svgrepo-com.svg" alt="">Credit Card</label>
+                            <label for="payment-input"class="payment-input">
+                                <input type="radio" name="payment" id="payment-input1">
+                                <img src="imges/paypal-svgrepo-com.svg" alt="">PayPal</label>
+                        </div>
+                    </div> -->
+                    
+                    <h3 class="payment-title">Payment with</h3>
+                    <button class="buttonCheckout" style="background-color: yellow;">
+                        <img src="imges/paypal-svgrepo1-com.svg" alt="">Paypal
+                    </button>
+                    <div class="separator-payment">
+                        <span class="payment-text">Or</span>
+                    </div>
                     <button class="buttonCheckout">
-                        CHECKOUT
+                        <img src="imges/credit-card-svgrepo-com.svg" alt="">Credit Card
                     </button>
                 </div>
             </div>
