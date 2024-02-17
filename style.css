@@ -303,11 +303,13 @@ input[type="text"]:focus{
 }
 
 /* Page checkout */
+
 .checkoutLayout{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     padding: 20px;
+    width: 100%;
 }
 .checkoutLayout .right{
     background: aqua;
@@ -339,7 +341,7 @@ input[type="text"]:focus{
     margin-top: 10px;
     border: none;
     background-color: rgb(247, 247, 247);
-    color: #fff;
+    color: #000000;
 }
 .checkoutLayout .row{
     display: flex;
@@ -353,13 +355,23 @@ input[type="text"]:focus{
 }
 .buttonCheckout{
     width: 100%;
-    height: 40px;
+    height: 50px;
     border: none;
     border-radius: 20px;
     margin-top: 20px;
     font-weight: bold;
     color: #fff;
-    background: aquamarine;
+    box-shadow: 1px 2px 6px rgba(2, 0, 0, 0.301);
+    text-shadow: 2px 1px 4px rgba(10, 0, 0, 1);
+    background: rgb(26, 221, 0);
+    cursor: pointer;
+}
+.buttonCheckout:hover{
+    background: rgb(29, 240, 2);
+    scale: 1.04;
+    color: rgb(208, 255, 0);
+    box-shadow: 0px 0px 0px rgba(2, 0, 0, 0.301);
+    text-shadow: 1px 0px 2px rgba(10, 0, 0, 1);
 }
 .returnCart h1{
     border-top: 1px solid #eee;
