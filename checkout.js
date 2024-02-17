@@ -1,3 +1,8 @@
+let listCard = document.querySelector('.listCard');
+let total = document.querySelector('.total');
+let quantity = document.querySelector('.quantity');
+let body = document.querySelector('body');
+
 let listCards = [];
 
 //  get cookie data cart
@@ -28,7 +33,7 @@ function reloadCard (){
             <div>${value.price.toLocaleString()}$</div>
             <div>
             <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
-            <div class="count">$${value.quantity}</div>
+            <div class="count">${value.quantity}</div>
             <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
 
             `;
@@ -39,15 +44,15 @@ function reloadCard (){
     quantity.innerText = count;
 }
 
-// function changeQuantity(key, quantity){
-//     if(quantity == 0){
-//         delete listCards[key];
-//     }else{
-//         listCards[key].quantity = quantity;
-//         listCards[key].price = quantity * products[key].price;
-//     }
+function changeQuantity(key, quantity){
+    if(quantity == 0){
+        delete listCards[key];
+    }else{
+        listCards[key].quantity = quantity;
+        listCards[key].price = quantity * products[key].price;
+    }
 //     // save to local storage cookie new
-//     let timeSave = "expires=Thu, 01 Jan 2025 00:00:00 GMT";
-//     document.cookie = "listCards="+JSON.stringify(listCards)+"; "+timeSave+"; path=/;";
-//     reloadCard();
-// }
+    let timeSave = "expires=Thu, 01 Jan 2025 00:00:00 GMT";
+    document.cookie = "listCards="+JSON.stringify(listCards)+"; "+timeSave+"; path=/;";
+    reloadCard();
+}

@@ -308,6 +308,8 @@ input[type="text"]:focus{
     gap: 50px;
     padding: 20px;
     width: 100%;
+    background-image: url("imges/red-brown-brick-wall-background.jpg");
+    background-size: cover;
 }
 .checkoutLayout .right{
     background: aqua;
