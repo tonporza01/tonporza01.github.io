@@ -126,7 +126,7 @@ function reloadCard (){
             <div>${value.price.toLocaleString()}$</div>
             <div>
             <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
-            <div class="count">$${value.quantity}</div>
+            <div class="count">${value.quantity}</div>
             <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
 
             `;
