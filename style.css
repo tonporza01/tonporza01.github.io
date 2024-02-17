@@ -27,8 +27,6 @@ body{
     display: flex;
     background: #f5f5f5fa;
     flex-wrap: wrap;
-    /* background-image: url("imges/cover_artists/โปสเตอร์อาหาร\ 002.jpg"); */
-    /* background-size: cover; */
 }
 .btn{
     padding: 10px 20px;
