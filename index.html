@@ -6,10 +6,11 @@
     <link rel="icon" href="imges/Logo artists/loco V3.jpg">
     <title>Tonpor Portfolio io</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"defer></script>
 </head>
 <body>
     <!-- NAVIGATION NAVBAR -->
-    <header>     
+    <header>
         <a href="index.html" class="logo-header">
             <img src="imges/Logo_artists/loco V3-P.png" alt="Artistscoffee"></a>
         <ul class="nav-header">
@@ -29,11 +30,13 @@
     </header>
 
     <main>
+      <!-- This is a hero contant -->
+      <div class="wrapper-full">
         <div class="Content-hero">
-            <img class="img-hero-box" src="imges/cover_artists/โปสเตอร์ แก้วแฟ 002.jpg" alt="Lattecoffee" width="30%">
+            <img class="img-hero-box" src="imges/cover_artists/โปสเตอร์ แก้วแฟ 002.jpg" alt="Lattecoffee">
             <h1 class="hero-title">Coffee Times</h1>
             <div class="hero-para-box">
-              <p class="hero-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi hic incidunt ullam aspernatur quis quae architecto quaerat, iure eum porro aut laudantium, voluptatem asperiores provident a natus, aperiam eos autem.</p>
+              <p class="hero-para">From rich espressos to smooth lattes, we have something to satisfy every coffee craving. Take advantage of this exclusive promotion and treat yourself to the perfect coffee experience.</p>
               <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <button type="button" class="btn">Buy Now Coffee</button>
                 <button type="button" class="btn">Deliverly Munu</button>
@@ -41,17 +44,55 @@
             </div>
         </div>
 
+
+
+      <!-- This is a carousel image -->
+      <section aria-label="Newset Photos">
+        <div class="carousel"data-carousel>
+          <button class="carousel-button prev"data-carousel-button="prev">&#x2BA8;</button>
+          <button class="carousel-button next"data-carousel-button="next">&#x2BA9;</button>
+          <ul data-slides>
+            <li class="slide"data-active>
+              <img src="imges/cover_artists/โปสเตอร์ แก้วแฟ 003.jpg" alt="Coffee#1">
+              <div class="carousel-caption">
+                <h3>Duo Coffee&Tea</h3>
+                <p>Indulge in our exquisite coffee selection with a special duo offer just for you!</p>
+              </div>
+            </li>
+            <li class="slide">
+              <img src="imges/cover_artists/โปรโมชั่น  Capuccino delivery jpg.jpg" alt="Coffee#2">
+              <div class="carousel-caption">
+                <h3>Duo Cappucino</h3>
+                <p> Buy 2 of your favorite coffee blends or flavors, and save 15% instantly!</p>
+              </div>
+            </li>
+            <li class="slide">
+              <img src="imges/cover_artists/โปรโมชั่น  Americano delivery 3 jpg.jpg" alt="Coffee#3">
+              <div class="carousel-caption">
+                <h3>Duo Americano</h3>
+                <p>Hurry, this offer won't last long! Visit us today and elevate your coffee game with savings and flavor.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
+        <div class="wrapper">
           <!-- ส่วน Show Products -->
-        <div class="list"></div>
-          <!-- ส่วน Show listcart bar -->
-          <div class="card">
-              <h1>Shopping Cart</h1>
-              <ul class="listCard"></ul>
-              <div class="checkout">
-                <a href="checkout.html" class="total">0</a>
-                  <div class="closeShopping">Close</div>
-                </div>
-            </div>
+          <div class="list"></div>
+            <!-- ส่วน Show listcart bar -->
+            <div class="card">
+                <h1>Shopping Cart</h1>
+                <ul class="listCard"></ul>
+                <div class="checkout">
+                  <a href="checkout.html" class="total">0</a>
+                    <div class="closeShopping">Close</div>
+                  </div>
+              </div>
+          </div>
+        </div>
         
             <!-- card img -->
         
@@ -70,6 +111,21 @@
         
 
     </main>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </footer>
 
     <script src="app.js"></script>
 </body>
