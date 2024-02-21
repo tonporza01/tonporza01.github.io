@@ -254,6 +254,7 @@ section{
     object-fit: cover;
     object-position: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 .slide[data-active]{
     opacity: 1;
@@ -487,7 +488,6 @@ section{
     height: 60px;
     border: none;
     border-radius: 30px;
-    /* margin-top: 20px; */
     font-weight: bold;
     color: #fff;
     box-shadow: 1px 2px 6px rgba(2, 0, 0, 0.301);
@@ -569,3 +569,4 @@ section{
     font-size: 19px;
     font-weight: 500;
 }
+
