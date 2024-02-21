@@ -135,6 +135,20 @@ label{
     width: 40px;
     opacity: 0.7;
 }
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #ffffff;
+    box-shadow: 6px 6px 12px #c3c3c3, -6px -6px 12px #fdfdfd;
+    width: 100%;
+}
+footer img{
+    max-width: 100px;
+    margin: 10px;
+}
 /* Body */
 .wrapper{
     max-width: 1600px;
