@@ -19,7 +19,7 @@
             <li><a href="content.html">Content</a></li>
         </ul>
         <div id="input-wrapper">
-            <input class="Search-Nav" id="input" type="text" placeholder="Search">
+            <input class="Search-Nav" id="input" type="text" placeholder="Search" onkeyup="search()">
             <img class="search-icon" src="imges/search-svgrepo-com.svg" alt="Search">
         </div>
 
@@ -30,12 +30,13 @@
     </header>
 
     <!-- ส่วน Show Products -->
+    <br>
     <div class="wrapper">
-        <h1>Coffee List</h1>
+        <h1 class="title space-padding">Coffee Products</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, reiciendis? Eum obcaecati eaque reiciendis? Itaque reprehenderit corporis labore enim porro incidunt, officia, nihil a perferendis, voluptatibus delectus commodi recusandae explicabo.</p>
     </div>
-
-    <div class="list"></div>
+    <br>
+    <div class="list" id="product-list"></div>
     
     <main>
         <div class="card">
