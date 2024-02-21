@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imges/Logo artists/loco V3.jpg">
     <title>Tonpor Portfolio io</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- NAVIGATION NAVBAR -->
     <header>
-        <a href="index.html" class="logo-header">
-            <img src="imges/Logo_artists/loco V3-P.png" alt="Artistscoffee"></a>
+      <a href="index.html" class="logo-header">
+        <img src="imges/Logo_artists/loco V3-P.png" alt="Artistscoffee"></a>
         <ul class="nav-header">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <div id="input-wrapper">
-            <input class="Search-Nav" id="input" type="text" placeholder="Search" onkeyup="search()">
-            <img class="search-icon" src="imges/search-svgrepo-com.svg" alt="Search">
+          <input class="Search-Nav" id="input" type="text" placeholder="Search" onkeyup="search()">
+          <img class="search-icon" src="imges/search-svgrepo-com.svg" alt="Search">
         </div>
         <div class="shopping">
-            <img src="imges/shopping-cart-svgrepo-com.svg" alt="shopping">
-            <span class="quantity">0</span>
+          <img src="imges/shopping-cart-svgrepo-com.svg" alt="shopping">
+          <span class="quantity">0</span>
         </div>   
-    </header>
-
-    <main>
-      <!-- This is a hero contant -->
-      <div class="wrapper-full">
-        <div class="Content-hero">
+      </header>
+      
+      <main>
+        <!-- This is a hero contant -->
+        <div class="wrapper-full">
+          <div class="Content-hero">
             <img class="img-hero-box" src="imges/cover_artists/โปสเตอร์ แก้วแฟ 002.jpg" alt="Lattecoffee" loading="lazy">
             <h1 class="hero-title">Coffee Times</h1>
             <div class="hero-para-box">
@@ -42,19 +42,39 @@
                 <button onclick="location.href='product.html'" type="button" class="btn">Deliverly Munu</button>
               </div>
             </div>
-        </div>
-
-      <!-- This is a carousel image -->
-      <section aria-label="Newset Photos">
-        <div class="carousel"data-carousel>
-          <button class="carousel-button prev"data-carousel-button="prev">&#x2BA8;</button>
-          <button class="carousel-button next"data-carousel-button="next">&#x2BA9;</button>
-          <ul data-slides>
-            <li class="slide"data-active>
-              <h2 class="promotion-carousel">Best selling</h2>
-              <img src="imges/cover_artists/โปสเตอร์ แก้วแฟ 003.jpg" alt="Coffee#1" loading="lazy" class="lazy">
-              <div class="carousel-caption">
-                <h3>Duo Coffee&Tea</h3>
+          </div>
+          <!-- This is a scenery contant -->
+          <div class="Content-scenery">
+            <h2 class="scenery-title fronblack">News and Promotion</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum et, assumenda ducimus praesentium veritatis tenetur doloremque rem mollitia architecto repellat quibusdam dolores quidem fuga sunt beatae repudiandae corporis voluptates dolore.</p>
+          </div>
+          
+            <div class="wrapper">
+              <!-- ส่วน Show Products -->
+              <div class="list"></div>
+                <!-- ส่วน Show listcart bar -->
+                <div class="card">
+                    <h1>Shopping Cart</h1>
+                    <ul class="listCard"></ul>
+                    <div class="checkout">
+                      <a href="checkout.html" class="total">0</a>
+                        <div class="closeShopping">Close</div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <br><br> <br>
+          <!-- This is a carousel image -->
+          <section aria-label="Newset Photos">
+            <div class="carousel"data-carousel>
+              <button class="carousel-button prev"data-carousel-button="prev">&#x2BA8;</button>
+              <button class="carousel-button next"data-carousel-button="next">&#x2BA9;</button>
+              <ul data-slides>
+                <li class="slide"data-active>
+                  <h2 class="promotion-carousel">Best selling</h2>
+                  <img src="imges/cover_artists/โปสเตอร์ แก้วแฟ 003.jpg" alt="Coffee#1" loading="lazy" class="lazy">
+                  <div class="carousel-caption">
+                    <h3>Duo Coffee&Tea</h3>
                 <p>Indulge in our exquisite coffee selection with a special duo offer just for you!</p>
               </div>
             </li>
@@ -78,25 +98,6 @@
         </div>
       </section>
 
-      <div class="Content-scenery">
-        <h2 class="scenery-title fronblack">News and Promotion</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum et, assumenda ducimus praesentium veritatis tenetur doloremque rem mollitia architecto repellat quibusdam dolores quidem fuga sunt beatae repudiandae corporis voluptates dolore.</p>
-      </div>
-
-        <div class="wrapper">
-          <!-- ส่วน Show Products -->
-          <div class="list"></div>
-            <!-- ส่วน Show listcart bar -->
-            <div class="card">
-                <h1>Shopping Cart</h1>
-                <ul class="listCard"></ul>
-                <div class="checkout">
-                  <a href="checkout.html" class="total">0</a>
-                    <div class="closeShopping">Close</div>
-                  </div>
-              </div>
-          </div>
-        </div>
 
     </main>
 

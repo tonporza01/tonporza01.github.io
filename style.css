@@ -137,6 +137,7 @@ label{
 }
 /* footer */
 footer{
+    margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -226,7 +227,8 @@ footer img{
 section{
     display: flex;
     align-items: center;
-    padding-bottom: 47rem;
+    padding-bottom: 49rem;
+    padding-top: 2rem;
     justify-content: center;
     background-image: url("imges/red-brown-brick-wall-background.jpg");
     background-size: cover;
