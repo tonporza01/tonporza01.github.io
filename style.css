@@ -147,6 +147,10 @@ label{
     margin: auto;
     padding: 0 20px;
 }
+.space-padding{
+    padding: 10px 0;
+    margin: auto;
+}
 .Content-hero{
     text-align: center;
     padding: 3rem 1.5rem;
@@ -182,7 +186,7 @@ label{
 section{
     display: flex;
     align-items: center;
-    padding-bottom: 42rem;
+    padding-bottom: 47rem;
     justify-content: center;
     background-image: url("imges/red-brown-brick-wall-background.jpg");
     background-size: cover;
@@ -212,6 +216,11 @@ section{
 .slide[data-active]{
     opacity: 1;
 }
+.promotion-carousel {
+    color: #fff;
+    text-align: center;
+    font-size: 52px;
+}
 .carousel-caption{
     position: absolute;
     padding-top: 15px;
@@ -232,7 +241,7 @@ section{
     background: none;
     border: none;
     font-size: 2.4rem;
-    top: 195px;
+    top: 260px;
     transform: translateY(-50%);
     color: rgba(255, 255, 255, 0.726);
     cursor: pointer;

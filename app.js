@@ -6,6 +6,28 @@ let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
 
+// Seach Bar 
+const search = () => {
+    const searchTerm = document.getElementById('input').value.toLowerCase();
+    const list = document.getElementById('product-list');
+    const productslist = document.querySelectorAll('.item');
+    const pname = document.getElementsByTagName('h2');
+
+    for(let i = 0; i < pname.length; i++){
+        let match = productslist[i].getElementsByTagName('h2')[0];
+
+        if(match){
+            let textvalue = match.textContent || match.innerHTML
+
+            if(textvalue.toLowerCase().indexOf(searchTerm) > -1){
+                productslist[i].style.display = 'block';
+            }else{
+                productslist[i].style.display = 'none';
+            }
+        }
+    }
+}
+
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
 })
@@ -98,8 +120,8 @@ function initApp() {
         newDiv.classList.add('item');
         newDiv.innerHTML = `
             <img src="${value.img}">
-            <div class="title">${value.name}</div>
-            <div class="price">${value.price}$</div>
+            <h2 class="title">${value.name}</h2>
+            <h3 class="price">${value.price}$</h3>
             <button onclick="addToCard(${key})">Add to card</button>
         `;
         list.appendChild(newDiv);
