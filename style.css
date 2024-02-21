@@ -140,14 +140,31 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 1rem 0rem;
     background: #ffffff;
-    box-shadow: 6px 6px 12px #c3c3c3, -6px -6px 12px #fdfdfd;
-    width: 100%;
+    border-top: 1px solid #ccc;
+}
+.footer-xy{
+    display: flex;
+    align-items: center;
+    width: 88%;
 }
 footer img{
-    max-width: 100px;
+    max-width: 80px;
     margin: 10px;
+}
+.footer-a{
+    color: #c3c3c3;
+    text-decoration: none;
+    line-height: 1;
+    margin-right: 0.5rem;
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 1ren 0.5rem;
+
 }
 /* Body */
 .wrapper{
@@ -186,6 +203,23 @@ footer img{
     font-size: 1.25rem;
     font-weight: 300;
     color: #fff;
+}
+.Content-scenery{
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+.scenery-title{
+    font-size: calc(1.45rem + 2.1vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+.scenery-para{
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 0 auto;
+    width: 50%;
+    flex: 0 0 auto;
 }
 
 /* carousel */
@@ -243,7 +277,7 @@ section{
 }
 .carousel-button{
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     background: none;
     border: none;
     font-size: 2.4rem;
@@ -294,6 +328,7 @@ section{
     background-image: url("imges/red-brown-brick-wall-background.jpg");
     background-size: cover;
     transition: 0.5s;
+    z-index: 2;
 }
 .card h1{
     color: #ffffff;
