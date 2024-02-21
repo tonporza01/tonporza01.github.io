@@ -99,7 +99,7 @@ function initApp() {
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="${value.img}">
+            <img src="${value.img}" loading="lazy">
             <h2 class="title">${value.name}</h2>
             <h3 class="price">${value.price}$</h3>
             <button onclick="addToCard(${key})">Add to card</button>
@@ -144,7 +144,7 @@ function reloadCard (){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-            <div><img src="${value.img}"></div>
+            <div><img src="${value.img}" loading="lazy"></div>
             <div>${value.name}</div>
             <div>${value.price.toLocaleString()}$</div>
             <div>
