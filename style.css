@@ -12,17 +12,7 @@
 h1{
     font-size: 30px;
 }
-/* ul{
-    display: flex;
-    align-items: center;
-}
-li{
-    margin: 10px;
-}
-li a {
-    color: black;
-    font-weight: bold;
-} */
+
 body{
     background: #fdf8e7;
 }
@@ -179,8 +169,6 @@ label{
     font-weight: 300;
     color: #fff;
 }
-
-/* Body */
 
 /* carousel */
 section{
