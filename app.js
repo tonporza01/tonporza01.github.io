@@ -35,26 +35,6 @@ closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
 
-// // This element Carousel
-// const buttons = document.querySelectorAll('[data-carousel-button]');
-
-// buttons.forEach(button => {
-    
-//     button.addEventListener('click', ()=>{
-//         const offset = button.dataset.carouselButton === 'next' ? 1 : -1
-//         const slides = button
-//         .closest('[data-carousel]')
-//         .querySelector('[data-slides]')
-        
-//         const activeSlide = slides.querySelector('[data-active]')
-//         let newindex = [...slides.children].indexOf(activeSlide) + offset
-//         if(newindex < 0) newindex = slides.children.length - 1
-//         if(newindex >= slides.children.length) newindex = 0
-        
-//         slides.children[newindex].dataset.active = true
-//         delete activeSlide.dataset.active
-//     })
-// })
 
 let products = [
     {
@@ -119,7 +99,7 @@ function initApp() {
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="${value.img}">
+            <img src="${value.img}" loading="lazy">
             <h2 class="title">${value.name}</h2>
             <h3 class="price">${value.price}$</h3>
             <button onclick="addToCard(${key})">Add to card</button>
@@ -164,7 +144,7 @@ function reloadCard (){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-            <div><img src="${value.img}"></div>
+            <div><img src="${value.img}" loading="lazy"></div>
             <div>${value.name}</div>
             <div>${value.price.toLocaleString()}$</div>
             <div>
