@@ -171,7 +171,6 @@ function changeQuantity(key, quantity){
     document.cookie = "listCards="+JSON.stringify(listCards)+"; "+timeSave+"; path=/;";
     reloadCard();
 }
-
 // Clear all cookies for fix Null Error in Chrome
 function deleteAllCookies() {
     const cookies = document.cookie.split(";");
@@ -183,3 +182,4 @@ function deleteAllCookies() {
         document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
 }
+deleteAllCookies()
