@@ -247,7 +247,7 @@ footer img{
 }
 .hero-para-box{
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
     flex: 0 0 auto;
 }
 .hero-para{
@@ -272,6 +272,21 @@ footer img{
     margin: 0 auto;
     width: 50%;
     flex: 0 0 auto;
+}
+.New-info{ 
+    text-align: start;
+    padding: 3rem 1.5rem;
+}
+.New-info p{
+    margin-bottom: 20px;
+}
+.New-info button{
+    align-items: center;
+}
+.New-pomo img{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
 }
 
 /* carousel */
