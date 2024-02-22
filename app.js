@@ -142,7 +142,7 @@ function reloadCard (){
             const price = value.price !== null ? value.price : 0;
             totalPrice = totalPrice + price;
             count = count + value.quantity;
-            
+
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
             <div><img src="${value.img}"loading="lazy"></div>
@@ -173,14 +173,14 @@ function changeQuantity(key, quantity){
     reloadCard();
 }
 // Clear all cookies for fix Null Error in Chrome
-function deleteAllCookies() {
-    const cookies = document.cookie.split(";");
+// function deleteAllCookies() {
+//     const cookies = document.cookie.split(";");
 
-    for (let i = 0; i < cookies.length; i++) {
-        const cookie = cookies[i];
-        const eqPos = cookie.indexOf("=");
-        const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    }
-}
-deleteAllCookies()
+//     for (let i = 0; i < cookies.length; i++) {
+//         const cookie = cookies[i];
+//         const eqPos = cookie.indexOf("=");
+//         const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+//         document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+//     }
+// }
+// deleteAllCookies()

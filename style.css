@@ -35,18 +35,22 @@ body{
     transform: scale(1.1);
 }
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px 20px;
     background: #ffffff;
     box-shadow:  6px 6px 12px #c3c3c3,
              -6px -6px 12px #fdfdfd;
-    width: 100%;
+}
+.container-hd{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 header img{
     max-width: 100px;
     margin: -10px;
+    margin-right: auto;
 }
 header img:hover{
     transform: scale(1.1);
@@ -68,13 +72,15 @@ header .shopping span{
     align-items: center;
     color: #fff;
     position: absolute;
-    top: -5px;
-    left: 80%;
+    top: -20px;
+    left: 100%;
     padding: 3px 10px;
 }
 .nav-header{
     display: flex;
     align-items: center;
+    margin-right: auto;
+    margin-left: 10px;
 }
 .nav-header li{
     margin: 10px;
@@ -93,6 +99,7 @@ header .shopping span{
     position: relative;
     display: flex;
     align-items: center;
+    margin-right: 40px;
 }
 input{
     background: #f5f4f4;
@@ -184,8 +191,16 @@ footer img{
     color: white;
     font-size: 1.5rem;
 }
+.contact-info h1{
+    font-size: 46px;
+    margin-bottom: 10px;
+}
 .contact-info p{
     margin-bottom: 5px;
+    font-size: large;
+}
+.contact-info p strong{
+    font-size: large;
 }
 .contact-info-grid{
     display: grid!important;
@@ -204,8 +219,14 @@ footer img{
 .contact-form input[type="submit"]:hover {
     background-color: #45a049;
 }
+.button-form{
+    margin: 20px 0px;
+}
 .right{
     color: white;
+}
+.contact-us{
+    text-align: start;
 }
 .Content-hero{
     text-align: center;
@@ -226,7 +247,7 @@ footer img{
 }
 .hero-para-box{
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
     flex: 0 0 auto;
 }
 .hero-para{
@@ -251,6 +272,21 @@ footer img{
     margin: 0 auto;
     width: 50%;
     flex: 0 0 auto;
+}
+.New-info{ 
+    text-align: start;
+    padding: 3rem 1.5rem;
+}
+.New-info p{
+    margin-bottom: 20px;
+}
+.New-info button{
+    align-items: center;
+}
+.New-pomo img{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
 }
 
 /* carousel */
@@ -344,6 +380,8 @@ section{
     column-gap: 20px;
     row-gap: 20px;
     margin-top: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .list-hiden{
     display: grid;
@@ -466,14 +504,18 @@ section{
 }
 
 /* Page checkout */
+.container-checkout{
+    width: 100%;
+    background-image: url("imges/red-brown-brick-wall-background.jpg");
+    background-size: cover;
+}
 .checkoutLayout{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     padding: 20px;
-    width: 100%;
-    background-image: url("imges/red-brown-brick-wall-background.jpg");
-    background-size: cover;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .checkoutLayout .right{
     background: aqua;
@@ -600,3 +642,21 @@ section{
     font-weight: 500;
 }
 
+@media (max-width: 930px) {
+    .checkoutLayout{
+        grid-template-columns: 1fr;
+    }
+    .Search-Nav{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 620px) {
+    .checkoutLayout .right .form{
+        grid-template-columns: 1fr;
+    }
+    .nav-header{
+        display: none;
+    }
+}
