@@ -22,10 +22,11 @@ function reloadCard (){
     let count = 0;
     let totalPrice = 0;
     listCards.forEach((value, key) => {
-        totalPrice = totalPrice + value.price;
-        count = count + value.quantity;
-        
         if(value != null){
+            const price = value.price !== null ? value.price : 0;
+            totalPrice = totalPrice + price;
+            count = count + value.quantity;
+            
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
             <div><img src="${value.img}"></div>
@@ -41,16 +42,3 @@ function reloadCard (){
     total.innerText = totalPrice.toLocaleString()+"$";
     quantity.innerText = count;
 }
-
-// function changeQuantity(key, quantity){
-//     if(quantity == 0){
-//         delete listCards[key];
-//     }else{
-//         listCards[key].quantity = quantity;
-//         listCards[key].price = quantity * products[key].price;
-//     }
-// //     // save to local storage cookie new
-//     let timeSave = "expires=Thu, 01 Jan 2025 00:00:00 GMT";
-//     document.cookie = "listCards="+JSON.stringify(listCards)+"; "+timeSave+"; path=/;";
-//     reloadCard();
-// }
