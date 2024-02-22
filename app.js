@@ -137,14 +137,15 @@ function reloadCard (){
     listCard.innerHTML = '';
     let count = 0;
     let totalPrice = 0;
-    listCards.forEach((value, key) => {
-        totalPrice = totalPrice + value.price;
-        count = count + value.quantity;
-        
-        if(value != null){
+    listCards.forEach((value, key) => {        
+        if(value !== null){
+            const price = value.price !== null ? value.price : 0;
+            totalPrice = totalPrice + price;
+            count = count + value.quantity;
+            
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-            <div><img src="${value.img}" loading="lazy"></div>
+            <div><img src="${value.img}"loading="lazy"></div>
             <div>${value.name}</div>
             <div>${value.price.toLocaleString()}$</div>
             <div>
