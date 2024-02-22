@@ -165,7 +165,9 @@ footer img{
     align-items: center;
     list-style: none;
     padding: 1ren 0.5rem;
-
+}
+.footer-social img:hover{
+    scale: 1.2;
 }
 /* Body */
 .wrapper{
